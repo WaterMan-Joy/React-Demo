@@ -1,0 +1,11 @@
+.card {
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(194, 224, 224, 0.96);
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  background-color: #e9fffa;
+  width: 50rem;
+  max-width: 95%;
+}
