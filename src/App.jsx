@@ -12,9 +12,13 @@ const App = () => {
     { title: "iPhone 6", amount: 1000, date: new Date() },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log("App.jsx");
+    console.log(expense);
+  };
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
       <Expense items={expenses} />
     </div>
   );
