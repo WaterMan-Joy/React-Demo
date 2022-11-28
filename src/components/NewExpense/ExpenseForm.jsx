@@ -47,12 +47,11 @@ const ExpenseForm = (props) => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log("***************");
+
     props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
-    console.log("ExpenseForm.jsx", expenseData);
   };
   return (
     <form onSubmit={submitHandler} action="">
